@@ -27,6 +27,8 @@ class Cart:
         return sum(item.cost for item in self.items)
 
     def print_cart(self):
-        for item in self.items:
-            print(f"Dvd_title: {item.title}")
+        if(len(self.items) == 0): print("The cart is empty")
+        else:
+            for item in self.items:
+                print(f"Dvd_title: {item.title}")
 # Phien ban chua gon gang
